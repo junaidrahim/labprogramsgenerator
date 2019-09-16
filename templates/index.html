@@ -26,13 +26,13 @@
         <form action="{{ url_for('download') }}" method='post'>
             <div class="form-group">
                 <label for="exampleInputEmail1">Your Name</label>
-                <input type="text" class="form-control" name="nameInput" placeholder="Enter your name">
+                <input required type="text" class="form-control" name="nameInput" placeholder="Enter your name">
                 <small id="emailHelp" class="form-text text-muted">There is a program that has the student's in it</small>
 
                 <br>
 
                 <label for="exampleInputEmail1">Your Hostel</label>
-                <input type="text" class="form-control" name="hostelInput" placeholder="Eg. KP7(A)">
+                <input required type="text" class="form-control" name="hostelInput" placeholder="Eg. KP7(A)">
                 <small id="emailHelp" class="form-text text-muted">There is a program that has the student's hostel in it</small>
             </div>
                 

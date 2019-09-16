@@ -61,7 +61,3 @@ def download():
             zip.write(file)
 
     return flask.send_file('{}.zip'.format(dirName), as_attachment=True)
-
-
-if __name__=="__main__":
-    server.run(port=8000, host='0.0.0.0', debug=True)
