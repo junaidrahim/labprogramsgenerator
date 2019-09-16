@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Lab Programs Generator</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h1 style='text-align: center'>C Lab Programs Generator</h1>
+        <p>
+            <h3>Here's whats going to happen,</h3>
+
+            You enter your name in the form below and a zip file containing all the C programs done in the lab 
+            will start to download.<br><br>
+            
+            <h3>Why the ask the name then ?</h3>
+            Well, in some programs there is the student's name mentioned. <br>
+            You enter your name and the website will autogenerate the programs with your name. <br>
+            Just try it out. You'll understand 😁
+        </p>
+        <br>
+        <form action="{{ url_for('download') }}" method='post'>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Your Name</label>
+                <input type="text" class="form-control" name="nameInput" placeholder="Enter your name">
+                <small id="emailHelp" class="form-text text-muted">There is a program that has the student's in it</small>
+
+                <br>
+
+                <label for="exampleInputEmail1">Your Hostel</label>
+                <input type="text" class="form-control" name="hostelInput" placeholder="Eg. KP7(A)">
+                <small id="emailHelp" class="form-text text-muted">There is a program that has the student's hostel in it</small>
+            </div>
+                
+                <button type="submit" class="btn btn-primary">Download Programs</button>
+        </form>
+
+    </div>
+</body>
+</html>
